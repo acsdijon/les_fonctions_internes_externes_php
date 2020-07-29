@@ -45,14 +45,13 @@
 					echo "<br>";
 					echo $number  . "<br>";
 					echo(is_int($number)) . "<br>"; // renvoie 1 pour true car c'est une fonction de chaîne de caractère
-					//scandir($number); // renvoie une erreur car scandir ne prend que les arrays
 					 ?>
 				</div>
 				<div class="col-lg-6">
 					<h4>Le nombre</h4>
 					<p>C'est tout simplement le nombre d'arguments que prend la fonction</p>
 					<?php
-					$hello = "Hello wolrd";
+					$hello = "Hello world";
 					$checkIfString = is_string($hello); // la fonction ne prend qu'une variable en argument
 					var_dump($checkIfString); // renvoie true car la question est vraie
 					echo "<br/>";
@@ -130,13 +129,26 @@
 					 }
 					 multiplication(2, 7);
 
+					 //camelCase functionEnCamelCase
+
 					 function multiplicationReturn($number1, $number2){
 					 	return $number1 * $number2;
 					 }
 
-					 echo "Le résultat est : " . multiplicationReturn(1,3); //ligne appellante de la fonction avec un echo pour afficher le résultat
+					 echo "Le résultat est : " . multiplicationReturn(1,5); //ligne appellante de la fonction avec un echo pour afficher le résultat
 
 					  ?>
+						<h5 clas="pt-4">Fonctions anonymes</h5>
+						<?php
+						$prenom = "Lisa";
+
+						$bonjour = function($check){
+							 printf("Bonjour %s\r\n", $check);
+						};
+
+						$bonjour($prenom);
+
+						 ?>
 				</div>
 			</div>
 		</div>
@@ -146,6 +158,7 @@
 		<div class="container">
 			<div class="row">
 				<p class="text-white font-weight-bold">Les fonctions en php</p>
+				<p><a href="https://www.php.net/manual/fr/language.functions.php" target="">Manuel PHP</a></p>
 			</div>
 		</div>
 	</footer>
