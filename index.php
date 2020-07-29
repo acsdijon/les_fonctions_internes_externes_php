@@ -157,8 +157,12 @@
 	<footer class="bg-dark pt-5 pb-5">
 		<div class="container">
 			<div class="row">
-				<p class="text-white font-weight-bold">Les fonctions en php</p>
-				<p><a href="https://www.php.net/manual/fr/language.functions.php" target="">Manuel PHP</a></p>
+				<div class="col-lg-6">
+					<p class="text-white font-weight-bold">Les fonctions en php</p>
+				</div>
+				<div class="col-lg-6">
+					<p><a href="https://www.php.net/manual/fr/language.functions.php" target="">Manuel PHP</a></p>
+				</div>
 			</div>
 		</div>
 	</footer>
