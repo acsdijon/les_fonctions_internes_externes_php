@@ -23,7 +23,7 @@
 			<h3 class="text-center text-secondary mt-4">Quelques exemples</h3>
 			<div class="container bg-secondary text-white font-weight-bold text-center pt-2 pb-2 border">
 				<?php
-				$fruits = array("Bananes", "Pommes", "Poires", "Pêches"); 
+				$fruits = array("Bananes", "Pommes", "Poires", "Pêches");
 				echo "Bonjour toi !" . "<br>"; // Fonctions de chaînes de caractères
 				print_r($fruits); // Fonctions de variables
 
@@ -41,7 +41,7 @@
 
 					$number = 2;
 					//is_int = fonctions de variables, prend en argument une variable
-					var_dump(is_int($number)); // revoie un boolean true car la réponse est vraie
+					var_dump(is_int($number)); // renvoie un boolean true car la réponse est vraie
 					echo "<br>";
 					echo $number  . "<br>";
 					echo(is_int($number)) . "<br>"; // renvoie 1 pour true car c'est une fonction de chaîne de caractère
@@ -54,7 +54,7 @@
 					<?php
 					$hello = "Hello wolrd";
 					$checkIfString = is_string($hello); // la fonction ne prend qu'une variable en argument
-					var_dump($checkIfString); // renvoie true car la question est vraie 
+					var_dump($checkIfString); // renvoie true car la question est vraie
 					echo "<br/>";
 					var_dump(filter_var('prenom@example.com', FILTER_VALIDATE_EMAIL)); // renvoie le nombre de caractères si c'est un email
 					echo "<br/>";
@@ -78,7 +78,7 @@
 						<p class="pl-4">Ecrire ce mot pour dire à php que l'on va créer une fonction</p>
 					<h5>2. Lui définir un nom qui fait référence à ce que fait la fonction</h5>
 					<h5>3. Appeller la fonction pour qu'elle s'éxécute</h5>
-					<?php 
+					<?php
 					// Fonction sans argument qui dit bonjour
 					echo "Une fonction qui dit bonjour : <br>";
 					function Bonjour(){
@@ -117,16 +117,18 @@
 							echo "email incorrect<br>";
 						}
 					}
-					InputEmail($email); 
+					InputEmail($email);
 
 					 ?>
 					 <h5 class="pt-4">Fonctions à deux arguments</h5>
 					 <?php
 
+					 	// Function avec deux arguments
+
 					 function multiplication($number1, $number2){
 					 	echo "Le résultat est : " . $number1 * $number2 . "<br>";
 					 }
-					 multiplication(2, 7); 
+					 multiplication(2, 7);
 
 					 function multiplicationReturn($number1, $number2){
 					 	return $number1 * $number2;
